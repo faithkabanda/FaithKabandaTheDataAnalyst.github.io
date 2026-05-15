@@ -21,7 +21,7 @@
 					<div id="intro">
 						<h1>Faith Kabanda<br />
 						The Data Analyst</h1>
-						<p>Data Analyst well versed in Python, R, Tableau, Power BI and many more tools with the skills to convert data in visuals that can be interpreted in strategic decision-making, solving problems and policy paper writing. </p> 
+						<p>Data Analyst well versed in Python, R, Tableau, Power BI and many more tools with the skills to convert data into visuals that can be interpreted in strategic decision-making, solving problems and policy paper writing. </p> 
 						
 						<p> Hosted by 27 Data Hub<a href="https://instagram.com/27datahub"> [@27datahub]</a>.</p>
 						<ul class="actions">
@@ -31,7 +31,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Faith Kabanda</a>
+						<a class="logo">Faith Kabanda</a>
 					</header>
 
 				<!-- Nav -->
@@ -80,7 +80,7 @@
 							<section class="posts">
 								<article>
 									<header>
-										<span class="date" style="font-size: 1.5em;">PROJECTS</span>
+										<span class="date" style="font-size: 1.5em;">PROJECT 1</span>
 									
 
 										<h2><a href="#">Sed magna<br />
@@ -95,6 +95,8 @@
 								<article>
 									<header>
 										
+										<span class="date" style="font-size: 1.5em;">PROJECT 2</span>
+
 										<h2><a href="#">Primis eget<br />
 										imperdiet lorem</a></h2>
 									</header>
@@ -106,6 +108,10 @@
 								</article>
 								<article>
 									<header>
+										
+
+										<span class="date" style="font-size: 1.5em;">PROJECT 3</span>
+
 										
 										<h2><a href="#">Ante mattis<br />
 										interdum dolor</a></h2>
@@ -119,6 +125,8 @@
 								<article>
 									<header>
 										
+										<span class="date" style="font-size: 1.5em;">PROJECT 4</span>
+
 										<h2><a href="#">Tempus sed<br />
 										nulla imperdiet</a></h2>
 									</header>
@@ -131,6 +139,8 @@
 								<article>
 									<header>
 										
+										<span class="date" style="font-size: 1.5em;">PROJECT 5</span>
+
 										<h2><a href="#">Odio magna<br />
 										sed consectetur</a></h2>
 									</header>
@@ -143,6 +153,8 @@
 								<article>
 									<header>
 										
+										<span class="date" style="font-size: 1.5em;">PROJECT 6</span>
+
 										<h2><a href="#">Augue lorem<br />
 										primis vestibulum</a></h2>
 									</header>
@@ -157,29 +169,47 @@
 					
 					</div>
 
+					<button onclick="topFunction()" id="topBtn">Back To Top</button>
+
+					<style>
+					#topBtn {
+					display: none;
+					position: fixed;
+					bottom: 20px;
+					right: 108px;
+					z-index: 99;
+					font-size: 14px;
+					border: none;
+					outline: none;
+					cursor: pointer;
+					padding: 4px 8px;
+					border-radius: 5px;
+					}
+					</style>
+
+					<script>
+					let mybutton = document.getElementById("topBtn");
+
+					window.onscroll = function() {
+					if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+						mybutton.style.display = "block";
+					} else {
+						mybutton.style.display = "none";
+					}
+					};
+
+					function topFunction() {
+					window.scrollTo({
+						top: 0,
+						behavior: "smooth"
+					});
+					}
+					</script>
+
+
 				<!-- Footer -->
 					<footer id="footer">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section>
+						
 						<section class="split contact">
 							<section class="alt">
 								<h3>Address</h3>
